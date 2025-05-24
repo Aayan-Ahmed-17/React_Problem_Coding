@@ -5,7 +5,7 @@ const Parent = () => {
       const [number, setNumber] = useState(500)
 
       function updateNumByChild(updatedNum){
-            setNumber(updatedNum)
+            setNumber(number + updatedNum)
       }
   return (
       <>
