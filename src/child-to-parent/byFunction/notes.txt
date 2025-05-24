@@ -1,0 +1,8 @@
+Explanation of code from blackblox ai:
+1) In the Parent component, we define a state variable dataFromChild and a function handleDataFromChild that updates this state.
+2) We pass handleDataFromChild to the Child component as a prop named sendData.
+3) In the Child component, when the button is clicked, we call sendData(data) to send the data back to the parent.
+
+
+we will be doing the same but we will be updating a number from child component.
+
