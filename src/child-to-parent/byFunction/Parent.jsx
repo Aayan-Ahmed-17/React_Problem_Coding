@@ -9,6 +9,7 @@ const Parent = () => {
       }
   return (
       <>
+      <h1>Data from child to parent through function</h1>
       <p>Parent Income: {number}</p>
     <Child sentdata={updateNumByChild}/>
       </>
