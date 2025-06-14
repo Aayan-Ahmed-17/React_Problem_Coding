@@ -5,8 +5,8 @@ const ToggleVisibility = () => {
   return (
     <>
       <h2>Toggle Visibility</h2>
-      <span>{state.visibility && "Text to hide/show"}</span>
-      <button onClick={() => dispatch({ type: state.visibility })}>
+      {state.visibility && <span>Text to hide/show</span>}
+      <button onClick={() => dispatch({ type: 'TOGGLE' })}>
         {state.visibility ? "hide" : "show"}
       </button>
     </>

@@ -1,9 +1,9 @@
 export const visibilityReducer = (state, action) => {
   switch (action.type) {
-    case true:
-      return { ...state, visibility: false };
+    case "TOGGLE":
+      return { ...state, visibility: !state.visibility };
     default:
-      return { ...state, visibility: true };
+      return state;
   }
 };
 
