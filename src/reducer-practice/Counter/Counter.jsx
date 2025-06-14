@@ -5,7 +5,6 @@ const Counter = () => {
   const [state, dispatch] = useReducer(counterReducer, counterInitialState);
   return (
     <>
-      <h1>Counter useReducer</h1>
       <h2>Counter : {state.count}</h2>
       <button onClick={() => dispatch({ type: "INCREMENT" })}>Increment</button>
       <button onClick={() => dispatch({ type: "DECREMENT" })}>Decrement</button>

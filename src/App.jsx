@@ -1,12 +1,12 @@
 import React from 'react'
 import Parent from './child-to-parent/byFunction/Parent'
-import Counter from './reducer-practice/Counter/Counter'
+import ReducerComponents from './reducer-practice/ReducerComponents'
 
 const App = () => {
   return (
     <>
     {/* <Parent/> */}
-    <Counter/>
+    <ReducerComponents/>
     </>
   )
 }
