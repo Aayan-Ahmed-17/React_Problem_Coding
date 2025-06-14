@@ -1,5 +1,4 @@
 export const counterReducer = (state, action) => {
-  console.log(state);
   switch (action.type) {
     case "INCREMENT":
       return { ...state, count: state.count + state.incrementBy };
