@@ -1,21 +1,6 @@
 import React, { useReducer } from "react";
+import { initialState, reducerFunction } from "./formReducer";
 
-const initialState = {
-  firstName: "",
-  lastName: "",
-  email: "",
-  password: "",
-  confirmPassword: "",
-};
-
-const reducerFunction = (state, action) => {
-  switch (action.type) {
-    case "SET_FIELD":
-      return { ...state, [action.field]: action.payload };
-    case "RESET":
-      return { ...state, [action.field]: action.payload };
-  }
-};
 const Form = () => {
   const [state, dispatch] = useReducer(reducerFunction, initialState);
 
@@ -25,7 +10,6 @@ const Form = () => {
   };
 
   const handleSubmit = (e) => {
-    console.log("state==>", state);
     e.preventDefault();
     console.log("form submited ==>", state);
     dispatch({ type: "RESET", payload: initialState });
@@ -80,7 +64,7 @@ const Form = () => {
             value={state.confirmPassword}
           />
         </div>
-        <button type="submit"></button>
+        <button type="submit">Submit Form</button>
       </form>
     </>
   );
