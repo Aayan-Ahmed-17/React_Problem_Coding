@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 const ToDo = () => {
+  const [task, setTask] = useState([{ id: 0, text: "through payload" }]);
   return (
     <>
       <h2>ToDo</h2>
@@ -13,8 +14,12 @@ const ToDo = () => {
       <br />
       <div>
         {/* deleting */}
-        <span>task 1</span>
-        <button>Remove</button>
+        {task.map((e) => (
+          <div>
+            <span>task 1</span>
+            <button>Remove</button>
+          </div>
+        ))}
       </div>
     </>
   );
