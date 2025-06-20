@@ -1,11 +1,11 @@
 import React, { useReducer } from "react";
-import TodoList from "./nothing.jsx";
+import TodoList from "./TodoList.jsx";
 
-const ToDo = () => {
+const Todo = () => {
   const [state, dispatch] = useReducer([{ id: 0, text: "through payload" }]);
   return (
     <>
-      <h2>ToDo</h2>
+      <h2>todo</h2>
       <div>
         <input type="text" onChange={() => {}} />
         <button>Add</button>
@@ -18,4 +18,4 @@ const ToDo = () => {
   );
 };
 
-export default ToDo;
+export default Todo;
